@@ -2,52 +2,74 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Nerd's</title>
+    <title>Каталог Нербс</title>
   </head>
   <body>
   <header>
     <nav>
-      <a>
-        <a href="catalog.html">
-          <img src="img/logo.svg" alt="Логотип студии»">
+      <a href="index.html">
+      <img src="img/logo.svg" alt="Логотип студии Нербс">
       <ul>
-        <li><a href="blank.html">Студия </a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a href="blank.html">Магазины</a></li>
-        <li><a href="blank.html">Контакты </a></li>
-        
-      </ul>
-      <ul><li><a href="blank.html">Корзина</a></li></ul>
-  
-</header>
-  <main>
-    
-    <h1>Магазин готовых шаблонов</h1>
-    <ul>
-      <li>
-        <a href="catalog.html">Главная</a>
-      </li>
-      <li>
-        <a href="catalog.html">Магазин</a>
-      </li>
-      <li>
-        Средства для ухода
-      </li>
+      <li><a href="blank.html">Студия </a></li>
+      <li><a href="blank.html">Клиенты</a></li>
+      <li><a href="catalog.html">КлиентыМагазины</a></li>
+      <li><a href="blank.html">Контакты </a></li>
     </ul>
+    <ul><a href="blank.html">Корзина</a></ul>
+  </header>
+  <main>
+    <h1>Магазин готовых шаблонов</h1>
     <section>
       <h2>Фильтр товаров</h2>
-      <form method="get" action="https://echo.htmlacademy.ru">
+      <form method="get" action="https://echo.htmlacademy.ru">        
         <fieldset>
-          <legend>Производители:</legend>
+          <legend>Стоимость</legend>
         </fieldset>
         <fieldset>
-          <legend>Группы товаров:</legend>
+          <legend>Сетка</legend>
+          <ul>
+            <li>
+              <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid" value="fixed" id="filter-fixed>
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid" value="rubber" id="filter-rubber>
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="advantages-block" id="filter-advantages-block" checked>
+              <label for="filter-advantages-block">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="gallery" id="filter-gallery" checked>
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="basket" id="filter-basket" checked>
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
         </fieldset>
         <button type="submit">Показать</button>
       </form>
     </section>
-  </section>
-   
   <section class="services">
     <h2>Услуги</h2>
   <ul>
