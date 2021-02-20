@@ -1,0 +1,109 @@
+title{
+    font-family: 'Roboto Slab', serif;
+}
+:root {
+    --basic-black: rgba(0, 0, 0, 1);
+    --basic-white:#EEEEEE;
+    --basic-extra-dark: rgba(40, 49, 54, 1);
+    background: rgba(238, 238, 238, 1);
+    background: rgba(251, 86, 90, 1);
+    --basic-gray: rgba(166, 166, 166, 1);
+    background: rgba(225, 225, 225, 1);
+    background: rgba(0, 202, 116, 1);
+    background: rgba(239, 200, 73, 1);
+    background: rgba(68, 68, 68, 1);
+    background: rgba(102, 102, 102, 1);
+    --basic-extra-white: rgba(193, 193, 193, 1);
+
+}
+body {
+  position: absolute;
+  width: 1440px;
+  height: 2476px;
+  left: 0px;
+  top: 0px;
+  background-color:var(--basic-white);
+  font-family: 'Roboto Slab', serif;
+  color:var(--basic-black);
+}
+main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-gray);
+  background-color: transparent;
+}
+site-navigation {
+  position: absolute;
+  font-family: 'Roboto Slab', serif;
+  color:var(--basic-black);
+  font-weight: 500;
+  fomain-headernt-size: 16px;
+}
+  .site-navigation-current a:not([href]) {
+    background-color: var(--basic-black);
+  }
+.site-navigation a:hover,
+.site-navigation a:focus,
+.basket a:hover,
+.basket a:focus {
+  background-color: var(--basic-gray);
+}
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  color:  #000000;
+  font-size: 16px;
+}
+a:hover
+a:focus{
+  background-color: var(--basic-extra-white);
+}
+img {
+  max-width: 100%;
+  height: auto;
+.site-navigation {
+  list-style: none;
+}
+.contacts-phone {
+  color: inherit;
+}
+.basket{
+  font: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+}
+p {
+  font: Roboto;
+  color:#000000;
+  font-size: 16px;
+  line-height: 24px;
+}
+h3 {
+font: Roboto;
+color:#000000;
+font-size: 16px;
+line-height: 24px;
+}
+social-button {
+  position: absolute;
+  width: 81px;
+  height: 81px;
+  left: 320px;
+  top: 2327px;
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+}
+companies:hover
+companies:focus {
+  background-color: var(--basic-extra-white);
+}
