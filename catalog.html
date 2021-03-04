@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Каталог Нёрдс</title>
@@ -19,7 +19,7 @@
       <ul class="site-navigation-list">
         <li><a href="blank.html">Студия </a></li>
         <li><a href="blank.html">Клиенты</a></li>
-        <li><a active="catalog.html">Магазин</a></li>
+        <li><a class="active" href="catalog.html">Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
       </ul>
       <ul class="nav-basket">
@@ -34,14 +34,15 @@
     <section class="catalog">
       <h2 class="catalog-title">Список макетов</h2>
     <section class="catalog-filter">
+      <dav class="container">
       <h2 class="catalog-filter-title">Фильтр товаров</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
+        <fieldset class="catalog-grop">
           <legend class="catalog-form-title">Стоимость</legend>
         </fieldset>
         <fieldset>
           <legend class="catalog-form-title">Сетка</legend>
-          <ul>
+          <ul class="catalog-item">
             <li>
               <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
               <label class="catalog-radio-label" for="filter-adaptive">Адаптивная</label>
@@ -58,7 +59,7 @@
         </fieldset>
         <fieldset>
           <legend class="catalog-form-title">Особенности</legend>
-          <ul>
+          <ul class="catalog-item">
             <li>
               <input type="checkbox" name="slider" id="filter-slider" checked>
               <label class="catalog-check-label" for="filter-slider">Слайдер</label>
@@ -87,9 +88,9 @@
     <div class="catalog-sort">
       <p class="catalog-sort-caption">Сортировать</p>
       <ul class="sort-item">
-        <li class="sort-list"><a href="blank.html">По цене</a></li>
-        <li class="sort-list"><a href="blank.html">По типу</a></li>
-        <li class="sort-list"><a href="blank.html">По названию</a></li>
+        <li class="sort-list"><a class="sort-list-a" href="blank.html">По цене</a></li>
+        <li class="sort-list"><a class="sort-list-a"  href="blank.html">По типу</a></li>
+        <li class="sort-list"><a class="sort-list-a"  href="blank.html">По названию</a></li>
       </ul>
     </div>
     <div>
@@ -185,6 +186,7 @@
           <a class="button" href="blank.html">Следущая</a>
         </li>
       </ul>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -201,6 +203,7 @@
       </div>
     </section>
     <section class="footer-social">
+      <div class="container"
       <ul class="footer-social-list">
         <li class="social-button">
           <a class=" social-button social-button-vk" href="blank.html">
@@ -219,6 +222,7 @@
         <b class="footer-slogan">Давайте дружить, это выгодно!</b>
         <p class="footer-paragraph">Скидка 10% для друзей из социальных сетей.</p>
       </div>
+    </div>
     </section>
   </footer>
 </body>
