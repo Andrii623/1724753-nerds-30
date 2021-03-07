@@ -19,7 +19,7 @@
       <ul class="site-navigation-list">
         <li><a href="blank.html">Студия </a></li>
         <li><a href="blank.html">Клиенты</a></li>
-        <li><a class="active" href="catalog.html">Магазин</a></li>
+        <li><a class="active">Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
       </ul>
       <ul class="nav-basket">
@@ -27,20 +27,20 @@
           <a class="basket" href="blank.html">Корзина</a>
         </li>
       </ul>
-      <h1 class="page-title">Магазин готовых шаблонов</h1>
     </nav>
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
   </header>
   <main >
     <section class="page-catalog">
-      <dav class="container catalog-filter-form">
+      <div class="container catalog-container">
       <h2 class="catalog-title">Список макетов</h2>
     <section class="catalog-filter">
       <h2 class="catalog-filter-title">Фильтр товаров</h2>
-      <form method="get" action="https://echo.htmlacademy.ru">
+      <form class="catalog-filter-form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-form-title">Стоимость</legend>
         </fieldset>
-        <fieldset>
+        <fieldset class="catalog-filter-group">
           <legend class="catalog-form-title">Сетка</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
@@ -58,54 +58,52 @@
           </ul>
         </fieldset>
         <fieldset class="catalog-filter-group">
-          <legend class=" catalog-filter-title">Особенности</legend>
-          <ul class="catalog-list">
+          <legend class="catalog-filter-title">Особенности</legend>
+          <ul class="catalog-filter-list">
             <li>
               <input type="checkbox" name="slider" id="filter-slider" checked>
-              <label class="chcatalog-filter-label" for="filter-slider">Слайдер</label>
+              <label class="catalog-checkbox-label" for="filter-slider">Слайдер</label>
             </li>
             <li>
               <input type="checkbox" name="advantages-block" id="filter-advantages-block">
-              <label class="catalog-filter-label" for="filter-advantages-block">Блок преимуществ</label>
+              <label class="catalog-checkbox-label" for="filter-advantages-block">Блок преимуществ</label>
             </li>
             <li>
               <input type="checkbox" name="news" id="filter-news" checked>
-              <label class="catalog-filter-label" for="filter-news">Новости</label>
+              <label class="catalog-checkbox-label" for="filter-news">Новости</label>
             </li>
             <li>
               <input type="checkbox" name="gallery" id="filter-gallery">
-              <label class="catalog-filter-label" for="filter-gallery">Галерея</label>
+              <label class="catalog-checkbox-label" for="filter-gallery">Галерея</label>
             </li>
             <li>
               <input type="checkbox" name="basket" id="filter-basket">
-              <label class="catalog-filter-label" for="filter-basket">Корзина</label>
+              <label class="catalog-checkbox-label" for="filter-basket">Корзина</label>
             </li>
           </ul>
         </fieldset>
         <button class="btn catalog-filter-btn" type="submit">Показать</button>
       </form>
     </section>
-    <div class="catalog-sort">
+    <div class="catalog-sort stack1 ">
       <p class="catalog-sort-caption">Сортировать</p>
       <ul class="catalog-sort-list">
         <li class="catalog-sort-item"><a class="sort-list-link" href="blank.html">По цене</a></li>
-        <li class="catalog-sort-item""><a class="sort-list-link"  href="blank.html">По типу</a></li>
-        <li class="catalog-sort-item""><a class="sort-list-link"  href="blank.html">По названию</a></li>
+        <li class="catalog-sort-item"><a class="sort-list-link"  href="blank.html">По типу</a></li>
+        <li class="catalog-sort-item"><a class="sort-list-link"  href="blank.html">По названию</a></li>
       </ul>
-    </div>
-    <div>
-      <ul class="sort-order-link">
-        <li class="sort-link-asc catalog-sort-item"><a href="blank.html">Вниз</a></li>
-        <li class="sort-link-desc catalog-sort-item"><a href="blank.html">Верх</a></li>
+      <ul class="sort-order-links">
+        <li class="sord-order-item sort-link-asc"><a href="blank.html">Вниз</a></li>
+        <li class="sord-order-item sort-link-desc"><a href="blank.html">Верх</a></li>
       </ul>
     </div>
     <div class="catalog">
-      <ul class="catalog-list">
+      <ul class="catalog-list stack2">
         <li class="catalog-item">
           <a>
             <img class="catalog-item-image" src="img/sedona.jpg" width="358" height="578" alt="Шаблон Седона">
           </a>
-        <div>
+        <div class="catalog-maket">
           <h3 class="catalog-item-title">Седона
             <a href="blank.html">Седона</a>
           </h3>
@@ -117,7 +115,7 @@
           <a>
             <img class="catalog-item-image" src="img/pink.jpg" width="358" height="578" alt="Шаблон Пинк">
           </a>
-        <div>
+        <div class="catalog-maket">
           <h3 class="catalog-item-title">Пинк
             <a href="blank.html">Пинк</a>
           </h3>
@@ -129,7 +127,7 @@
           <a>
             <img class="catalog-item-image" src="img/barbershop.jpg" width="358" height="578" alt="Шаблон барбершопа">
           </a>
-        <div>
+        <div class="catalog-maket">
           <h3 class="catalog-item-title">Барбершопа
             <a href="blank.html">Барбершоп</a>
           </h3>
@@ -141,7 +139,7 @@
           <a>
             <img class="catalog-item-image" src="img/mishka.jpg" width="358" height="578" alt="Шаблон Мишка">
           </a>
-        <div>
+        <div class="catalog-maket">
           <h3 class="catalog-item-title">Мишка
             <a href="blank.html">Мишка</a>
           </h3>
@@ -151,7 +149,7 @@
         </li>
         <li class="catalog-item">
           <img class="catalog-item-image" src="img/alpus.jpg" width="358" height="578" alt="Шаблон Алпус">
-        <div>
+        <div class="catalog-maket">
           <h3 class="catalog-item-title">Алпус
             <a href="blank.html">Алпус</a>
           </h3>
@@ -163,7 +161,7 @@
           <a>
             <img class="catalog-item-image" src="img/kvast.jpg" width="358" height="578" alt="Шаблон Кваст">
           </a>
-        <div>
+        <div class="catalog-maket">
           <h3 class="catalog-item-title">Кваст
             <a href="blank.html">Кваст</a>
           </h3>
@@ -174,18 +172,18 @@
       </ul>
       </div>
     </section>
-      <ul>
+      <ul class="paginate">
         <li>
-          <a class="button">1</a>
+          <a class="paginate-link">1</a>
         </li>
         <li>
-          <a class="button" href="blank.html">2</a>
+          <a class="paginate-link" href="blank.html">2</a>
         </li>
         <li>
-          <a class="button" href="blank.html">3</a>
+          <a class="paginate-link" href="blank.html">3</a>
         </li>
         <li>
-          <a class="button" href="blank.html">Следущая</a>
+          <a class="paginate-link" href="blank.html">Следущая</a>
         </li>
       </ul>
       </div>
@@ -205,7 +203,7 @@
       </div>
     </section>
     <section class="footer-social">
-      <div class="container"
+      <div class="footer-container container">
       <ul class="footer-social-list">
         <li class="social-button">
           <a class=" social-button social-button-vk" href="blank.html">
@@ -224,7 +222,7 @@
         <b class="footer-slogan">Давайте дружить, это выгодно!</b>
         <p class="footer-paragraph">Скидка 10% для друзей из социальных сетей.</p>
       </div>
-    </div>
+      </div>
     </section>
   </footer>
 </body>
