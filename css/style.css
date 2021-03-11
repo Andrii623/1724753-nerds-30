@@ -8,6 +8,8 @@
     --yellow: #EFC849;
     --extra-gray: #444444;
     --basic-white: #FFFFFF;
+    --red-aiming: #E74246;
+    --red-pressing:#D7373B;
 }
 
 body {
@@ -52,6 +54,21 @@ img{
   background-color: var(--red);
 }
 
+.btn a {
+  background-color: var(--red);
+  opacity: 1;
+}
+
+.btn a:hover {
+  background-color: var(--red-aiming);
+  opacity: 0.3;
+}
+
+.btn a:active {
+  background-color: var(--red-pressing);
+  opacity: 1;
+}
+
 .main-navigation {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
@@ -59,50 +76,74 @@ img{
   line-height: 30px;
   font-weight: 500;
   color: var(--black);
-}
-
-.main-header container {
-  display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .main-header {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: flex-start;
   background-color: var(--gray-nav);
-  margin: 0;
-  padding: 0;
-  width: 100%;
 }
 
 .main-header-logo {
-  display: flex;
-  justify-content: start;
-  flex-grow: 0;
   display: block;
   width: 160px;
-  height: auto;
-  margin-right: 140px;
+}
+
+.site-navigation-list li {
+  margin: 0 50px;
 }
 
 .site-navigation-list {
   display: flex;
-  justify-content: center;
-  flex-grow: 1;
+  flex-wrap: wrap;
   list-style-type: none;
-  margin-left: 200px;
-  padding: 0;
-  width: 440px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
+.site-navigation-list a {
+  color: var(--black);
+}
+
+.site-navigation-list a {
+  opacity: 1;
+}
+
+.site-navigation-list a:hover {
+  color: var(--red);
+  opacity: 0.3;
+}
+
+.site-navigation-list a:active {
+  opacity: 1;
 }
 
 .nav-basket {
   display: flex;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: auto;
   max-width: 150px;
   padding-left: 40px;
   list-style-type: none;
+}
+
+.nav-basket a {
+  color: var(--black);
+}
+
+.nav-basket a {
+  opacity: 1;
+}
+
+.nav-basket a:hover {
+  color: var(--red);
+  opacity: 0.3;
+}
+
+.nav-basket a:active {
+  opacity: 1;
 }
 
 .features {
@@ -128,6 +169,19 @@ img{
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.services-list  a {
+  color: var(--red);
+}
+
+.services-list  a {
+  opacity: 1;
+}
+
+.services-list  a:hover {
+  color: var(--red);
+  opacity: 0.3;
 }
 
 .services-item {
@@ -167,7 +221,7 @@ img{
 
 .about {
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 70% 30%;
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
@@ -206,6 +260,7 @@ img{
 .companies {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  align-items: center;
 }
 
 .companies-link img {
@@ -251,20 +306,30 @@ img{
 
 .footer-social-list {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-item {
+  margin: 0 20px;
 }
 
 .social-button {
+  display: block;
+  width: 81px;
+  height: 81px;
   background: var(--gray);
-  padding-right: 140px;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 50%;
 }
 
 .footer-container {
   display: grid;
   grid-template-columns: min-content 1fr;
+  align-items: center;
 }
 
 .social-button-vk {
@@ -285,6 +350,14 @@ img{
 
 .social-button:active {
   opacity: 0.1;
+}
+
+.social-button li {
+  margin: 0 10px;
+}
+
+.footer-text {
+  padding-left: 140px;
 }
 
 .footer-slogan {
@@ -397,22 +470,37 @@ img{
 
 .catalog-sort {
   display: flex;
-  flex-grow: 1;
+  flex-wrap: wrap;
+  color: var(--black);
   list-style-type: none;
 }
 
 .catalog-sort-caption {
+  color: var(--black);
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
 }
 
  .catalog-sort-list {
-list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   color: var(--black);
+   list-style: none;
+  }
+.catalog-sort-list li {
+   margin: 0 10px;
+   padding: 0 10px;
  }
 
-.sort-order-link {
+.sort-order-links {
+  display: flex;
   color: var(--black);
+}
+
+.sort-order-links li {
+margin: 0 10px;
+padding: 0 20px;
 }
 
 .catalog-title {
@@ -444,9 +532,17 @@ list-style: none;
 }
 
 .paginate {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   color: var(--black);
   background-color: var(--gray-nav);
+}
+
+.paginate li {
+  color: var(--black);
+  margin: 0 10px;
+  padding: 0 10px;
 }
 
 .catalog-info {
