@@ -66,8 +66,9 @@ img {
   line-height: 18px;
   background-color: var(--red);
   border-radius: 3px;
-  align-items: center;
   text-align: center;
+  padding: 16px 55px;
+  text-transform: uppercase;
 }
 
 .btn:hover,
@@ -88,7 +89,6 @@ img {
   line-height: 30px;
   font-weight: 500;
   color: var(--black);
-  align-items: center;
 }
 
 .main-header-logo {
@@ -105,7 +105,8 @@ img {
   flex-wrap: wrap;
   list-style-type: none;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 28px 20px;
+  margin-left: 160px;
 }
 
 .site-navigation-list li {
@@ -116,6 +117,7 @@ img {
 .nav-basket a {
   display: block;
   color: var(--black);
+  text-transform: uppercase;
 }
 
 .site-navigation-list a:hover,
@@ -135,28 +137,27 @@ img {
   margin-bottom: 0;
   margin-left: 82px;
   max-width: 150px;
-  padding-left: 40px;
   list-style-type: none;
+  padding-top: 33px;
 }
 
 .nav-basket a:hover {
   color: var(--red-hover);
 }
 
-.nav-basket .basket {
+.basket {
   position: relative;
+  padding-left: 40px;
 }
 
 .basket::before {
   content: "";
   position: absolute;
-  right: 82px;
+  left: 0;
   width: 15px;
   height: 15px;
-  background-image: url("img/cart-icon.svg");
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color: #000000;
 }
 
 .basket:hover::before,
@@ -169,14 +170,30 @@ img {
 }
 
 .features {
+  padding-top: 56px;
+  padding-bottom: 92px;
   margin-bottom: 40px;
   background-color: var(--gray-nav);
 }
 
+.features-item-phones {
+  background-image: url("../img/nerds-index-slide1.png");
+}
+
+.features-item {
+  background: no-repeat;
+}
+
+.features-item p {
+  width: 400px;
+  margin: 15px 0 53px;
+}
+
 .features-title {
-  margin: 0;
+  margin: 0 0 26px;
   font-size: 55px;
   line-height: 55px;
+  width: 300px;
 }
 
 .services-title {
@@ -187,28 +204,47 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0;
-  margin: 0;
   list-style: none;
+  border-bottom: 2px solid var(--gray-nav);
+  margin-top: 80px;
+  left: 0;
 }
 
-.services-item {
-  padding-right: 100px;
+.services-item .btn {
+  padding: 15px 40px;
+  width: 138px;
+  height: 130px;
+  margin-left: 0;
+  margin-right: 100px;
 }
 
 .services-item p {
+  width: 300px;
+  height: 45px;
+  margin-left: 0px;
+  margin-top: 15px;
+  margin: 15px 0 46px;
 }
 
 .services-item:nth-child(3n) {
-  padding-right: 60px;
+  padding-right: 0px;
 }
 
-.services-item-title {
+.services-item:last-child {
+  margin-right: -40px;
+}
+
+.services-list-title {
   color: var(--black);
+  width: 138px;
+  height: 30px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   margin: 0;
   padding: 0;
+  padding-top: 20px;
+  text-transform: uppercase;
 }
 
 .services-item-green .btn {
@@ -221,7 +257,7 @@ img {
 
 .services-item-green .btn:hover,
 .services-item-green .btn:focus {
- background-color: var(--green-hover);
+  background-color: var(--green-hover);
 }
 
 .services-item-green .btn:active {
@@ -251,34 +287,71 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
+  margin-top: 100px;
+  border-bottom: 2px solid var(--gray-nav);
 }
 
 .about-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  border-left: width 25px height 2px  solid var(--red);
+  margin-top: 13px;
 }
 
 .about-info {
-  padding-right: 140px;
+  padding-right: 130px;
 }
 
-.about-title {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 500;
+.about-fact {
+  align-items: center;
+  padding-top: 35px;
+  margin-left: -10px;
 }
 
-.sup-title {
-  font-weight: 700;
+.table-title {
+  padding-top: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .about-data {
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
+  align-items: center;
+  padding-top: 30px;
 }
 
+.about-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  padding-top: 30px;
+}
+
+.about-item {
+  text-align: left;
+  margin-left: 30px;
+  padding: 15px;
+}
+
+.about-item::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: var(--red);
+  left: 100px;
+  background-repeat: no-repeat;
+  margin-top: 11px;
+  }
+
+.sup-title {
+  padding-top: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
 .about-row {
   font-size: 16px;
@@ -289,6 +362,18 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
+  height: 180px;
+  border-bottom: 2px 52px solid var(--gray-nav);
+  margin-left: 20px;
+}
+
+.companies-link {
+	border-right: 2px solid var(--gray-nav);
+  margin-right: 20px;
+}
+
+.companies-link:last-child {
+	border-right: none;
 }
 
 .companies-link img {
@@ -309,7 +394,14 @@ img {
 
 .contacts {
   line-height: 18px;
-  margin-bottom: 35px;
+  position: absolute;
+  width: 319px;
+  height: 200px;
+  background-color: var(--basic-white);
+  align-items: center;
+  padding-top: 150px;
+  margin-left: 140px;
+  left: 0;
 }
 
 .footer-container {
@@ -323,20 +415,38 @@ img {
   width: 319px;
   height: 308px;
   background-color: var(--basic-white);
-  margin: 20px;
-  padding: 16px;
-  left: 140px;
-  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.contacts p {
+  margin-left: 50px;
+}
+
+.contacts .btn {
+  padding-top: 20px;
+  text-align: center;
+  padding: 15px 40px;
 }
 
 .contacts-name {
+  align-items: center;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  margin-top: 20px;
+  text-transform: uppercase;
+  margin-left: 50px;
 }
 
 .contacts-phone {
+  margin-top: 20px;
   color: inherit;
+}
+
+.contacts .btn {
+  padding-top: 0px;
+  margin-left: 20px;
 }
 
 .basket {
@@ -347,6 +457,13 @@ img {
 .map {
   width: 100%;
   height: 416px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.footer-social {
+  margin-top: 65px;
+  margin-bottom: 30px;
 }
 
 .footer-social-list {
@@ -369,6 +486,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
+  margin-left: -30px;
+  left: 20px;
 }
 
 .social-button-vk {
@@ -396,7 +515,7 @@ img {
 }
 
 .footer-text {
-  padding-left: 140px;
+  padding-left: 80px;
 }
 
 .footer-slogan {
