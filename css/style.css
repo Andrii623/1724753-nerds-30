@@ -181,8 +181,36 @@ img {
   margin-left: -45px;
 }
 
-.features-item-phones {
+.site-wrapper {
+  width: 760px;
+  height: 431px;
+  background-repeat: no-repeat;
+  background-position: center;
   background-image: url("../img/nerds-index-slide1.png");
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  width: 67px;
+  justify-content: space-between;
+}
+
+.slider-controls button {
+  padding: 0;
+  width: 17px;
+  height: 17px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slide {
+  display: none;
 }
 
 .features-item {
@@ -304,7 +332,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: -9px;
+  margin-top: -4px;
   margin-left: -25px;
   line-height: 21px;
 }
@@ -343,7 +371,7 @@ img {
 
 .about-item {
   text-align: left;
-  margin-left: 67px;
+  margin-left: 44px;
   padding: 14px;
 }
 
@@ -353,9 +381,9 @@ img {
   width: 25px;
   height: 2px;
   background-color: var(--red);
-  left: 121px;
+  left: 103px;
   background-repeat: no-repeat;
-  margin-top: 12px;
+  margin-top: 9px;
   }
 
 .sup-title {
@@ -408,14 +436,14 @@ img {
 .contacts {
   line-height: 23px;
   position: absolute;
-  align-items: center;
   width: 314px;
   height: 263px;
-  margin-top: 110px;
+  margin-top: 140px;
   margin-left: 105px;
   padding-left: 8px;
   background-color: var(--basic-white);
   padding-top: 49px;
+  left: 0;
 }
 
 .footer-container {
@@ -432,7 +460,7 @@ img {
 .contacts .btn {
   text-align: center;
   padding: 15px 45px;
-  margin-left: 45px;
+  margin-left: 40px;
 }
 
 .contacts-name {
@@ -441,7 +469,7 @@ img {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-left: 96px;
+  margin-left: 37px;
   margin: 43;
 }
 
@@ -464,7 +492,7 @@ img {
   display: block;
   width: 1440px;
   height: 416px;
-  margin-top: 81px;
+  margin-top: 85px;
   margin-left: -32px;
   text-align: center;
   left: 0;
@@ -697,8 +725,8 @@ img {
 .catalog-checkbox-label + label::before {
   content: "";
   position: absolute;
-  left: -42px;
-  top: 0;
+  left: -36px;
+  top: 8;
   width: 16px;
   height: 16px;
   border: 2px solid var(--gray-nav);
@@ -707,8 +735,8 @@ img {
 .catalog-checkbox-label:checked + label::after {
   content: "";
   position: absolute;
-  top: -1px;
-  left: -41px;
+  top: 2px;
+  left: -35px;
   width: 21px;
   height: 18px;
   background-image: url("../img/Shape.svg");
@@ -719,19 +747,19 @@ img {
 .catalog-radio-label + label::before {
   content: "";
   position: absolute;
-  left: -42px;
-  top: -1px;
-  width: 16px;
-  height: 16px;
-  border: 2px solid var(--gray-nav);
+  left: -39px;
+  top: 6px;
+  width: 15px;
+  height: 15px;
+  border: 5px solid var(--gray-nav);
   border-radius: 50%;
 }
 
 .catalog-radio-label:checked + label::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: -36px;
+  top: 14px;
+  left: -31px;
   width: 8px;
   height: 8px;
   background-color: var(--gray-nav);
